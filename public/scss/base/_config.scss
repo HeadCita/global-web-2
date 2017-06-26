@@ -1,0 +1,26 @@
+//FONT
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+$font-family: 'Open Sans', sans-serif;
+
+
+// COLORS
+
+$color1: #fff;
+$color2: #000;
+$color3: #ccc;
+
+
+// BREAKPOINTS
+
+$small: 320px;
+$large: 720px;
+$xlarge: 1224px;
+
+// MEDIAQUERIES
+
+@mixin mq($min-width) {
+    @media screen and (min-width: $min-width) {
+        @content;
+    }
+}
