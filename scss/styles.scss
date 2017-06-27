@@ -4,11 +4,9 @@
 @import "base/normalize";
 @import "base/base";
 
-// ESTILOS LAYOUT
-
-
+// ESTILOS COMPONENTS
+@import "components/header";
 
 // ESTILOS MODULES
 
 @import "modules/buttons";
-@import "modules/selectList";

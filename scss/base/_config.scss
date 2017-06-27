@@ -1,14 +1,17 @@
 //FONT
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
 
-$font-family: 'Open Sans', sans-serif;
+$font-family: 'Ubuntu', sans-serif;
 
 
 // COLORS
 
-$color1: #fff;
-$color2: #000;
-$color3: #ccc;
+$colors: (
+
+);
+$color1: #B3251E;
+$color2: #F1B62F;
+$color3: #373435; //letras
 
 
 // BREAKPOINTS
