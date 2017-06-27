@@ -3,7 +3,7 @@ const express = require('express'), //framework
     favicon = require('serve-favicon'),
     publicDir = express.static(`${__dirname}/public`),
     viewDir = `${__dirname}/views`,
-    port = (process.env.PORT || 3000);
+    port = (process.env.PORT || 4004);
 
 let app = express();
 

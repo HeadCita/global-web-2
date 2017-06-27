@@ -4,9 +4,13 @@
 @import "base/normalize";
 @import "base/base";
 
+
 // ESTILOS COMPONENTS
 @import "components/header";
+@import "components/put-us";
+@import "components/contact-us";
 
 // ESTILOS MODULES
 
-@import "modules/buttons";
+@import "modules/button";
+@import "modules/office"

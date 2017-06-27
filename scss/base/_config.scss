@@ -1,18 +1,24 @@
 //FONT
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
+@import url(https://file.myfontastic.com/PHQBf2afPKJtJTFBEe7QzW/icons.css);
 
 $font-family: 'Ubuntu', sans-serif;
-
+$normal: 400;
+$bold: 700;
 
 // COLORS
 
 $colors: (
-
+    rojo: #B3251E,
+    amarillo: #F1B62F,
+    letra: #373435,
+    gris-oscuro: #272727
 );
-$color1: #B3251E;
-$color2: #F1B62F;
-$color3: #373435; //letras
 
+@function color($color){
+    @return map-get($colors, $color);
+}
 
 // BREAKPOINTS
 

@@ -1,0 +1,16 @@
+.button{
+    padding: 10px 15px;
+    color: white;
+    background: black;
+    border: none;
+}
+
+.button--red{
+    @extend .button;
+    background: color(rojo);
+}
+
+.button--yellow{
+    @extend .button;
+    background: color(amarillo);
+}
