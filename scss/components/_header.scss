@@ -30,6 +30,12 @@
         transition: all ease-in-out 0.4s;
     }
 
+    &__burger.open {
+        position: fixed;
+        right: 0;
+        z-index: 1000;
+    }
+
     &__burger.open span:nth-child(2) {
         width: 0;
         opacity: 0;
