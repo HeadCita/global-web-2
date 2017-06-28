@@ -22,9 +22,10 @@ $colors: (
 
 // BREAKPOINTS
 
-$small: 320px;
-$large: 720px;
-$xlarge: 1224px;
+$small: 0;
+$middle: 640px;
+$large: 1024px;
+$xlarge: 1440px;
 
 // MEDIAQUERIES
 
@@ -32,4 +33,10 @@ $xlarge: 1224px;
     @media screen and (min-width: $min-width) {
         @content;
     }
+}
+
+//IMAGENES
+
+@function img($img){
+    @return url('../img/#{$img}');
 }

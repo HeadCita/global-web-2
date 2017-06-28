@@ -1,12 +1,12 @@
 .office{
     display: flex;
     flex-direction: column;
-    padding: 0 15px;
+    padding: 0 15px; //a los costados
     margin-bottom: 50px;
 
     &__contact{
         display: flex;
-    flex-direction: column;
+        flex-direction: column;
     }
 
     &__data{
@@ -32,4 +32,41 @@
         border-radius: 10px;
     }
 
+}
+
+@include mq($middle){
+    .office{
+        flex-direction: row;
+        margin-bottom: 80px;
+        &__contact{
+            width: calc(40% - 20px);
+            justify-content: space-between;
+            margin-right: 10px;
+        }
+        &__map{
+            width: calc(60% - 20px);
+            margin-left: 10px;
+            height: 250px;
+        }
+    }
+}
+
+@include mq($large){
+    .office{
+        flex-direction: row;
+        &__contact{
+            flex-direction: row;
+            width: calc(70% - 40px);
+            align-items: center;
+            margin-right: 20px;
+        }
+        &__data{
+            padding: 0 10px;
+        }
+
+        &__map{
+            width: calc(30% - 40px); 
+            margin-left: 20px;
+        }
+    }
 }
