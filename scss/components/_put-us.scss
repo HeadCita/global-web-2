@@ -3,5 +3,16 @@
     flex-direction: column;
     background: color(gris-oscuro);
     color: #fff;
+    &:before {
+        content: "";
+        background: img('bar-gray-after.png') 0 0 repeat-x;
+        top: 5px;
+        width: 100%;
+        z-index: 2000;
+        height: 78px;
+        position: absolute;
+        animation: bar-animation 120s infinite linear;
+    }   
 }
+
 
