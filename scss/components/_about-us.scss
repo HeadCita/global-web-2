@@ -5,7 +5,9 @@
     padding-bottom: 30px;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
+}
 
+.content-about-us{
     &__title{
         text-align: center;
         margin: 0;
@@ -25,8 +27,9 @@
     margin: auto;
 
     &__information{
+        box-sizing: border-box;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 20px;        
     }
 
     &__title{
@@ -39,12 +42,41 @@
         border: 0;
         height: 4px;
         width: 160px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         background-color: color(rojo);         
     }
 
     &__text{
         text-align: center;
     }
+}
 
+@include mq($middle){
+    .content-about-us{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .business{
+        flex-direction: row;
+        max-width: 600px;       
+
+        &__information{
+            box-sizing: border-box;            
+            max-width: 50%;
+            margin: 0 15px;
+        }
+
+        &__title{
+            text-align: left;
+        }
+
+        &__hr{
+            margin-left: 0;
+        }
+
+        &__text{
+            text-align: justify;
+        }
+    }
 }
