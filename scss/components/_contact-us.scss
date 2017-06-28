@@ -1,7 +1,9 @@
 .contact-us{
+    margin-bottom: 30px;
     &__title{
         text-align: center;
     }
+
 }
 
 .contact-form{
@@ -19,4 +21,20 @@
         border-style: solid;
         border-color: black;
     }
+}
+
+@include mq($middle){
+    .contact-form{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+}
+
+@include mq($large){
+    .contact-form{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
 }
