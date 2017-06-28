@@ -1,0 +1,50 @@
+.about-us{
+    background-color: color(amarillo);
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+
+    &__title{
+        text-align: center;
+        margin: 0;
+    }
+
+    &__description{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.business{
+    max-width: 85%;
+    display: flex;   
+    flex-direction: column;
+    margin: auto;
+
+    &__information{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__title{
+        font-size: 2em;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__hr{
+        border: 0;
+        height: 4px;
+        width: 160px;
+        margin-bottom: 15px;
+        background-color: color(rojo);         
+    }
+
+    &__text{
+        text-align: center;
+    }
+
+}
