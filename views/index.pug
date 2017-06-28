@@ -7,8 +7,13 @@ html(lang= "es")
         meta(name="keywords" content="escuela de manejo, obtencion de brevetes, examen de manejo, escuela de conductores, aprender a manejar")
         meta(name="author" content="HeadCita")
         meta(name="owner" content="Multiservicios Global Car SAC")
+        script(src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous")
         link(href="/css/styles.css" rel="stylesheet")
         title= title
     body
+        include partials/header.pug
         //include partials/put-us.pug
         include partials/contact-us.pug
+        script(src="/js/script.js")
