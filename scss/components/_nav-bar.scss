@@ -1,0 +1,39 @@
+.menu {
+    background-color: rgba(color(gris-oscuro),.99);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right ease-in 0.4s;
+    z-index: 200;
+
+    &__bar {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items:center; 
+    }
+
+    &__items {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 40%;
+    }
+
+    &__item {
+        border-bottom: 1px solid #ddd;
+    }
+
+    &__link {
+        color: #ddd;
+        display: block;
+        padding: 0.5rem 0.5rem;
+        text-align: center;
+    }
+}
+
+.menu.show {
+    right: 0%;
+}
