@@ -1,4 +1,10 @@
 .category{
+    position: absolute;
+    left: -1000%;
+    &.active{
+        position: relative;
+        left: 0;
+    }
     &__title{
         text-align: center;
     }
