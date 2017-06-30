@@ -1,0 +1,37 @@
+.category{
+    &__title{
+        text-align: center;
+    }
+    &__description{
+        text-align: center;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+    }
+    &__requisites{
+        text-align: center;
+    }
+    &__stitle{
+        font-size: 1.2em;
+        margin-bottom: 0px;
+    }
+    &__vehicles{
+        text-align: center;
+    }
+    @include mq($large){
+        &__body{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__requisites{
+            text-align: left;
+            width: 30%;
+        }
+        &__vehicles{
+            text-align: left;
+            width: 50%;
+        }
+    }
+}
+

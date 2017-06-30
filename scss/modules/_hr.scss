@@ -1,0 +1,18 @@
+.hr{
+    border: 0;
+    height: 4px;
+    width: 160px;
+    margin-bottom: 20px;
+    background-color: color(rojo);
+    &--yellow{
+        @extend .hr;
+        background-color: color(amarillo);
+    }
+    @include mq($large){
+        &{
+            margin-left: 0;
+        }
+    }   
+}
+
+

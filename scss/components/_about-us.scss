@@ -36,15 +36,7 @@
         font-size: 2em;
         text-align: center;
         margin: 0;
-    }
-
-    &__hr{
-        border: 0;
-        height: 4px;
-        width: 160px;
-        margin-bottom: 20px;
-        background-color: color(rojo);         
-    }
+    }  
 
     &__text{
         text-align: center;
@@ -69,10 +61,6 @@
 
         &__title{
             text-align: left;
-        }
-
-        &__hr{
-            margin-left: 0;
         }
 
         &__text{
