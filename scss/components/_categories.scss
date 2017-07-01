@@ -1,0 +1,12 @@
+.categories{
+    background: color(rojo);
+    color: #fff;
+    h3, h4{
+        color: #fff;
+    }
+    padding-bottom: 78px; 
+    
+    &__category-container{
+        position: relative;
+    }
+}

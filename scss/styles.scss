@@ -7,17 +7,22 @@
 // LAYOUT
 
 @import "layout/container";
+@import "layout/bar-animation";
 
 
 // ESTILOS COMPONENTS
 @import "components/header";
 @import "components/nav-bar";
-@import "components/put-us";
 @import "components/about-us";
+@import "components/categories";
+@import "components/put-us";
 @import "components/contact-us";
 @import "components/footer";
 
 // ESTILOS MODULES
 
 @import "modules/button";
-@import "modules/office"
+@import "modules/office";
+@import "modules/category";
+@import "modules/hr";
+@import "modules/tab-bar";
