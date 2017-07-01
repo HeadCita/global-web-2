@@ -61,12 +61,17 @@
         }
 
         &__item {
-            border-bottom: 1px solid transparent;
+            border-bottom: 2px solid transparent;
             width: 12%;
         }
 
         &__link {
-            font-size: 1rem;
+            font-size: 1.2rem;
+            padding: 1rem 0.5rem;
+        }
+
+        &__item:hover {
+            border-bottom-color: color(amarillo); 
         }
     }
 }
