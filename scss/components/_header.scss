@@ -9,13 +9,19 @@
     align-items: center;
     justify-content: space-between;
 
+    &__contact {
+        display: none;
+    }
+
     &__logo {
-        width: 4rem;
-        margin: 0.5rem;
+        width: 5rem;
+        height: 80px;
+        margin: 0.5rem 1rem;
     }
 
     &__burger {
         padding: 0.5rem;
+        margin-right: 0.5rem; 
         cursor: pointer;
     }
 
@@ -50,4 +56,78 @@
         transform: rotate(-45deg);
         top: 10px;
     }
+
+    @include mq($large) {
+
+        &__contact {
+            display: flex;
+            align-items: center;
+            margin: 0 1rem;
+        }
+
+        &__reception {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                margin: 0 1rem;
+            }
+        }
+
+        &__number {
+            margin: 0; 
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: #eee;
+            font-weight: $bold;
+            text-align: center;
+
+            &::before {
+                content: 'Llama para más información';
+                display: block;
+                text-transform: uppercase;
+                font-size: .8rem;
+                letter-spacing: normal;
+            }
+        }
+
+        &__burger {
+            display: none;
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+
+    &__item::before {
+        font-size: 1.5rem;
+        color: #eee;
+        margin: 0 .6rem;
+        display: inline-block;
+        padding: .4rem .4rem;
+        border-radius: 3px;
+    }
+}
+
+.icon-mobile::before {
+    font-size: 3rem;
+    background-color: color(amarillo);
+    color: #eee;
+    padding: 0.4rem 0.5rem; 
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.icon-facebook::before {
+    background-color: rgba(#3A5897,.99);
+}
+.icon-twitter::before {
+    background-color: rgba(#55ACEE,.99);
+}
+.icon-youtube::before {
+    background-color: rgba(#FFF,1);
+    color: color(rojo);
 }
