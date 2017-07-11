@@ -1,11 +1,16 @@
 .categories{
+    
     background: color(rojo);
     color: #fff;
     h3, h4{
         color: #fff;
     }
     padding-bottom: 78px; 
-    
+    &__title{
+        margin-top: 0;
+        text-align: center;
+        color: #fff;
+    }
     &__category-container{
         position: relative;
     }
