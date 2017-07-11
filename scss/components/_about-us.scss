@@ -1,13 +1,12 @@
 .about-us{
     background-color: color(amarillo);
     box-sizing: border-box;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-}
 
-.content-about-us{
+
     &__title{
         text-align: center;
         margin: 0;
@@ -16,15 +15,14 @@
     &__description{
         text-align: center;
         padding-top: 10px;
-        padding-bottom: 10px;
     }
-}
 
-.business{
-    max-width: 85%;
-    display: flex;   
-    flex-direction: column;
-    margin: auto;
+    &__business{
+        max-width: 85%;
+        display: flex;   
+        flex-direction: column;
+        margin: auto;
+    }
 
     &__information{
         box-sizing: border-box;
@@ -32,7 +30,7 @@
         padding-bottom: 20px;        
     }
 
-    &__title{
+    &__sub-title{
         font-size: 2em;
         text-align: center;
         margin: 0;
@@ -44,18 +42,22 @@
 
     &__image{
         display: none;    
-    }
+    }    
 }
 
 @include mq($middle){
-    .content-about-us{
-        max-width: 600px;
-        margin: 0 auto;
-    }
+    .about-us{
+        width: 100%;
 
-    .business{
-        flex-direction: row;
-        max-width: 600px;       
+        &__principal{
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        &__business{
+            flex-direction: row;
+            max-width: 600px;
+        }      
 
         &__information{
             box-sizing: border-box;            
@@ -70,21 +72,26 @@
 }
 
 @include mq($large){
-    .content-about-us{
-        max-width: 100%;
-        margin: 0 auto;
-    }
+    .about-us{
+        padding-top: 50px;
+        padding-bottom: 50px;
 
-    .business{
-        max-width: 90%;
-        justify-content: space-around;
+        &__principal{
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        &__business{
+            max-width: 100%;
+            justify-content: space-around;
+        }
 
         &__information{
             width: 25%;
             margin: 0 1.5rem;
         }
 
-        &__title{
+        &__sub-title{
             text-align: left;
         }
 
@@ -95,6 +102,6 @@
             -webkit-transform: scaleX(-1);
             -moz-transform: scaleX(-1);
             transform: scaleX(-1);
-        }
+        }        
     }
 }
