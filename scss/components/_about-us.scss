@@ -1,8 +1,8 @@
 .about-us{
     background-color: color(amarillo);
     box-sizing: border-box;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
 }
@@ -41,6 +41,10 @@
     &__text{
         text-align: center;
     }
+
+    &__image{
+        display: none;    
+    }
 }
 
 @include mq($middle){
@@ -59,12 +63,38 @@
             margin: 0 15px;
         }
 
+        &__text{
+            text-align: justify;
+        }
+    }
+}
+
+@include mq($large){
+    .content-about-us{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .business{
+        max-width: 90%;
+        justify-content: space-around;
+
+        &__information{
+            width: 25%;
+            margin: 0 1.5rem;
+        }
+
         &__title{
             text-align: left;
         }
 
-        &__text{
-            text-align: justify;
+        &__image{
+            display: inline-block;
+            width: 550px;
+            margin: auto 10px;
+            -webkit-transform: scaleX(-1);
+            -moz-transform: scaleX(-1);
+            transform: scaleX(-1);
         }
     }
 }
