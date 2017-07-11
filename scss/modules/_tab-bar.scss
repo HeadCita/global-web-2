@@ -1,6 +1,7 @@
 .tab-bar{
+    width: 60%;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     flex: auto;
@@ -12,6 +13,10 @@
         text-align: center;
         border-left: 2px solid #fff;
         &.active{
+            background: #fff;
+            color: color(rojo);
+        }
+        &:hover{
             background: #fff;
             color: color(rojo);
         }
