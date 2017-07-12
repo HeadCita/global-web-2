@@ -52,3 +52,49 @@
         margin: 0;
     }
 }
+
+@include mq($middle) {
+    .footer{
+
+        &__info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__number{
+            margin-left: 8px;
+            padding-top: 8px;
+        }
+
+        &__section{
+            width: 40%;
+            margin: auto 20px;
+        }
+    }
+}
+
+@include mq($large) {
+    .footer{
+        &__info{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        &__section{
+            width: 50%;
+        }
+
+        &__item::before {
+            margin: 1rem;
+        }
+
+        &__number{
+            padding-top: 0;
+            margin-left: 15px;
+        }
+    }
+}
