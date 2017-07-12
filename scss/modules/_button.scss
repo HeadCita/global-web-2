@@ -8,9 +8,30 @@
 .button--red{
     @extend .button;
     background: color(rojo);
+    text-transform: uppercase;
+    font-size: .8rem;
+    border: 1px solid color(rojo);
+    transition: all 0.2s;
+
+    &:hover {
+        color: color(rojo);
+        background-color: #fff;
+        border-color: #fff;
+    }
 }
 
-.button--yellow{
+.button--white{
     @extend .button;
-    background: color(amarillo);
+    background: transparent;
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin: 0 .5rem 0 0;
+    color: white;
+    border: 1px solid #fff;
+    transition: all 0.2s;
+
+    &:hover {
+        color: color(letra);
+        background-color: #fff;
+    }
 }
