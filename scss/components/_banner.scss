@@ -1,1 +1,198 @@
 //Vista del banner
+.banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 14rem;
+
+    &__data-container {
+        .form {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(-45deg, rgba(#000, .7) 10%, transparent 50%);
+        opacity: .7;
+    }
+
+    &__images {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        height: 100%;
+        width: calc(100% * 3);
+    }
+
+    &__image-item {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__data {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        max-width: 1200px;
+        text-align: right;
+        text-transform: uppercase;
+        color: white;
+        z-index: 100;
+        padding: 1rem 1rem;
+
+        h1 {
+            font-size: 1.1rem;
+            color: #eee;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #eee;
+            margin: .5rem 0;
+
+            span {
+                color: color(amarillo);
+            }
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 659px) {
+        & {
+            height: 16.5rem;
+        }
+
+        &__data {
+            top: 26%;
+        }
+    }
+
+    @media screen and (min-width: 660px) and (max-width: 767px) {
+        & {
+            height: 20rem;
+        }
+
+        &__data {
+            top: 25%;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+    }
+
+    @include mq(717px) {
+         h1 {
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+        }
+    }
+
+    @include mq(768px) {
+        & {
+            height: 28rem;
+        }
+
+        &__data {
+            top: 27%;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            font-size: 2.6rem;
+        }
+
+        p {
+            display: block;
+            text-transform: initial;
+            font-size: .9rem;
+        }
+    }
+
+    @media screen and (min-width: 841px) and (max-width: 1023px) {
+        h1 {
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    @include mq($large) {
+        & {
+            height: 32rem;
+        }
+
+        &__data-container {
+            .form {
+                display: block;
+            }
+        }
+
+        &__data {
+            top: 27%;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            font-size: 3.1rem;
+        }
+
+        p {
+            display: block;
+            text-transform: initial;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.form {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 220px;
+    align-items: center;
+    background-color: rgba(192,192,192, .4);
+
+    &__header {
+        background-color: #fff;
+        color: color(letra);
+        text-transform: uppercase;
+        width: 100%;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+    }
+
+    input {
+        margin-bottom: 1rem;
+    }
+}
+
