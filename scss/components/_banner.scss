@@ -170,6 +170,18 @@
             font-size: 1.1rem;
         }
     }
+
+    &__road-bar{
+        background: img('bg_slider_bottom.png') 0 0 repeat-x;
+        //background: red;
+        bottom: -39px;
+        width: 100%;
+        z-index: 6000;
+        height: 78px;
+        position: absolute;
+        animation: bar-animation 160s infinite linear;
+    }
+
 }
 
 .form {

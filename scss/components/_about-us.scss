@@ -3,8 +3,18 @@
     box-sizing: border-box;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    position: relative;
+    
+    &__road-bar{
+        background: img('bg_slider_bottom.png') 0 0 repeat-x;
+        //background: red;
+        top: -39px;
+        width: 100%;
+        z-index: 6000;
+        height: 78px;
+        position: absolute;
+        animation: bar-animation 160s infinite linear;
+    }
 
 
     &__title{
