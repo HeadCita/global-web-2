@@ -1,7 +1,7 @@
 .about-us{
     background-color: color(amarillo);
     box-sizing: border-box;
-    padding-top: 30px;
+    padding-top: 50px;    
     padding-bottom: 30px;
     position: relative;
     
@@ -83,7 +83,7 @@
 
 @include mq($large){
     .about-us{
-        padding-top: 50px;
+        padding-top: 60px;
         padding-bottom: 50px;
 
         &__principal{
