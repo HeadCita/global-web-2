@@ -1,29 +1,23 @@
 .tab-bar{
-    width: 60%;
     list-style: none;
     margin: 0 auto;
-    padding: 0;
     display: flex;
-    flex: auto;
-    border: 2px solid #fff;
-    border-radius: 6px;
+    justify-content: space-around;
+    background: #EBEBEB;
+    padding: 0;
     cursor: pointer;
+    box-sizing: border-box;
     &__item{
         width: 100%;
         text-align: center;
-        border-left: 2px solid #fff;
+        padding: 5px;
+        box-sizing: border-box;
         &.active{
-            background: #fff;
+            border-bottom: 4px solid color(amarillo);
             color: color(rojo);
         }
         &:hover{
-            background: #fff;
             color: color(rojo);
         }
-    }
-    &__item:nth-child(1){
-        border-left: none;
-    }
-    
-   
+    }  
 }

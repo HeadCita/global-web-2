@@ -1,16 +1,22 @@
 .categories{
-    background: color(rojo);
-    color: #fff;
+    background: color(blanco);
+    color: color(letra);
     padding-top: 30px;
-    h3, h4{
-        color: #fff;
+    h3{
+        color: color(letra);
+    } 
+    h4{
+        color: color(rojo);
     }
     padding-bottom: 78px; 
     
     &__title{
         margin-top: 0;
         text-align: center;
-        color: #fff;
+        color: color(letra);
+        span{
+            color: color(rojo);
+        }
     }
     &__category-container{
         position: relative;
