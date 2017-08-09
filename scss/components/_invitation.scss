@@ -1,0 +1,17 @@
+.invitation{
+    background: color(blanco);
+    box-sizing: border-box;
+    padding-top: 30px;
+
+    &__title{
+        text-align: center;
+        span{
+            color: color(rojo);
+        }
+    }
+
+    &__body{
+     display: flex;
+    }
+
+}
