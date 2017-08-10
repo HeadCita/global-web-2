@@ -1,9 +1,21 @@
 .about-us{
-    background-color: color(amarillo);
+    //background-color: color(amarillo);
     box-sizing: border-box;
     padding-top: 50px;    
     padding-bottom: 30px;
     position: relative;
+    background-color: #F8F8f8;
+
+    .trapezoide {
+        background-color: color(amarillo);
+        transform: skewY(-5deg);
+        padding: 40px 0;
+
+        .container {
+            transform: skewY(5deg);
+            padding: 40px 0;
+        }
+    }
     
     &__road-bar{
         background: img('bg_slider_bottom.png') 0 0 repeat-x;
@@ -16,6 +28,9 @@
         animation: bar-animation 160s infinite linear;
     }
 
+    &__principal {
+        padding-top: 10px;
+    }
 
     &__title{
         text-align: center;
