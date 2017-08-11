@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    setTimeout(function(){
+        $('.splash').addClass('loaded');
+    }, 3000);
+    
+
+
     $(".header-info__burger").on('click', function () {
         $(this).toggleClass("open");
         $(".menu").toggleClass("show");
