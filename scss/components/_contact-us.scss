@@ -1,13 +1,16 @@
 .contact-us{
-    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    
+    padding-top: 30px;
+    padding-bottom: 15px;
     &__title{
         text-align: center;
+        color: color(rojo);
     }
-
 }
 
 .contact-form{
-    padding: 0 15px;
+    padding: 20px 15px;
     &__item{
         display: flex;
         flex-direction: column;
@@ -19,7 +22,12 @@
     &__input{
         border-width: 1px;
         border-style: solid;
-        border-color: black;
+        border-color: #FFFFFF;
+        background-color: #DFDFDF;
+        padding: 8px;
+    }
+    &__input::-webkit-input-placeholder {
+        color: #666666;
     }
 }
 
