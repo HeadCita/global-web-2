@@ -1,6 +1,6 @@
 .footer{
     padding-top: 20px;
-    background-color:color(gris-oscuro); 
+    background-color: #000000; 
 
     &__info{
         width: 100%;
@@ -49,6 +49,13 @@
         display: inline-block;
         padding: .4rem .4rem;
         border-radius: 3px;
+    }
+
+    &__hr{
+        height: 1.8px;
+        width: 86%;
+        background-color: #FFFFFF;
+        border: none;
     }
     
     &__copyright{
