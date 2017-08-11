@@ -6,7 +6,7 @@
     top: 0;
     right: -120%;
     transition: right ease-in 0.4s;
-    z-index: 200;
+    z-index: 7999;
 
     &__bar {
         display: flex;
@@ -51,6 +51,8 @@
         width: 100%;
         height: auto;
         position: static;
+        right: 0;
+        top: 96px;
         background-color: color(gris-oscuro);
 
 

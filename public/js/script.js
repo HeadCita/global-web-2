@@ -4,7 +4,14 @@ $(document).ready(function () {
     }, 2000);
     
     
-
+    $(window).scroll(function(){
+        var headerHeight = $('header').height();
+        if($(this).scrollTop()>headerHeight){
+            $('.menu').css({position: 'fixed', top: 0});
+        }else{
+            $('.menu').css({position: 'static'});
+        }
+    });
 
     $(".header-info__burger").on('click', function () {
         $(this).toggleClass("open");
