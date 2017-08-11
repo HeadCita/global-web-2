@@ -5,15 +5,30 @@
     padding-bottom: 30px;
     position: relative;
     background-color: #F8F8f8;
+    color: color(blanco);
+
+    .bg-trapezoide {
+        padding: 40px 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-color: rgba(color(rojo), .6);
+    }
 
     .trapezoide {
-        background-color: color(amarillo);
-        transform: skewY(-5deg);
-        padding: 40px 0;
+        background-image: img('fondo-about-us.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: skewY(-2deg);
+        padding: 60px 0;
 
         .container {
-            transform: skewY(5deg);
+            transform: skewY(2deg);
             padding: 40px 0;
+            position: relative;
+            z-index: 10;
         }
     }
     
@@ -35,6 +50,7 @@
     &__title{
         text-align: center;
         margin: 0;
+        color: color(blanco);
     }
 
     &__description{
@@ -52,13 +68,17 @@
     &__information{
         box-sizing: border-box;
         padding-top: 20px;
-        padding-bottom: 20px;        
+        padding-bottom: 20px;
+        .hr {
+            background-color: color(blanco);
+        }  
     }
 
     &__sub-title{
         font-size: 2em;
         text-align: center;
         margin: 0;
+        color: color(blanco);
     }  
 
     &__text{
