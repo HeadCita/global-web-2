@@ -1,7 +1,7 @@
 $(document).ready(function () {
     setTimeout(function(){
         $('.splash').addClass('loaded');
-    }, 3000);
+    }, 2000);
     
 
 

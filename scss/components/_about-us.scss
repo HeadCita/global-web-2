@@ -13,11 +13,11 @@
         height: 100%;
         width: 100%;
         top: 0;
-        background-color: rgba(color(rojo), .6);
+        background-color: rgba(color(rojo), .91);
     }
 
     .trapezoide {
-        background-image: img('fondo-about-us.jpeg');
+        background-image: img('about-us.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -86,7 +86,8 @@
     }
 
     &__image{
-        display: none;    
+        display: none;
+        border: 4px solid color(blanco);    
     }    
 }
 
@@ -112,6 +113,9 @@
 
         &__text{
             text-align: justify;
+        }
+        &__image{
+            display: block;
         }
     }
 }
@@ -141,7 +145,7 @@
         }
 
         &__image{
-            display: inline-block;
+            display: block;
             width: 550px;
             margin: auto 10px;
             -webkit-transform: scaleX(-1);
