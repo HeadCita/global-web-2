@@ -2,15 +2,15 @@
     h2.contact-us__title CONTÁCTANOS
     .contact-form
         .contact-form__item
-            label(for='username').contact-form__label NOMBRE:*
-            input(type='text' name='name' id='name').contact-form__input 
+            label(for='username').contact-form__label
+            input(type='text' name='name' id='name' placeholder='Nombre').contact-form__input 
         .contact-form__item
-            label(for='username').contact-form__label EMAIL:*
-            input(type='text' name='name' id='name').contact-form__input 
+            label(for='username').contact-form__label
+            input(type='text' name='name' id='name' placeholder='Email').contact-form__input 
         .contact-form__item
-            label(for='username').contact-form__label TELÉFONO o CELULAR:*
-            input(type='number' name='name' id='name').contact-form__input 
+            label(for='username').contact-form__label
+            input(type='phone' name='name' id='name' placeholder='Teléfono').contact-form__input 
         .contact-form__item
-            label(for='username').contact-form__label MENSAJE:
-            textarea(name='name' id='name' rows="15").contact-form__input 
+            label(for='username').contact-form__label
+            textarea(placeholder="Escriba su mensaje", name="name", rows="15").contact-form__input
         input(type='submit' value='Enviar').contact-form__submit.button
