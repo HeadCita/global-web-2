@@ -3,6 +3,7 @@ $(document).ready(function () {
         $('.splash').addClass('loaded');
     }, 2000);
     
+    
 
 
     $(".header-info__burger").on('click', function () {
