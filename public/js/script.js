@@ -3,15 +3,20 @@ $(document).ready(function () {
         $('.splash').addClass('loaded');
     }, 2000);
     
+    /*var mediaquery = window.matchMedia("(min-width: 1024)");
+    if(mediaquery.matches){
+        $(window).scroll(function(){
+            var headerHeight = $('header').height();
+            if($(this).scrollTop()>headerHeight){
+                $('.menu').css({position: 'fixed', top: 0});
+            }else{
+                $('.menu').css({position: 'static'});
+            }
+        });
+    }*/
     
-    $(window).scroll(function(){
-        var headerHeight = $('header').height();
-        if($(this).scrollTop()>headerHeight){
-            $('.menu').css({position: 'fixed', top: 0});
-        }else{
-            $('.menu').css({position: 'static'});
-        }
-    });
+
+
 
     $(".header-info__burger").on('click', function () {
         $(this).toggleClass("open");
